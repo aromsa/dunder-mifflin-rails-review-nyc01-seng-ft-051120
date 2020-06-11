@@ -1,0 +1,5 @@
+<h1> Employee Index <h1>
+
+<% @employees.all.each do |e| %>
+<p><%= link_to "#{e.first_name} #{e.last_name}", e %><p>
+<% end %>
